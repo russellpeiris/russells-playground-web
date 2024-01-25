@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/src/assets/fonts/Inter-Regular.ttf') format('ttf');
+  font-style: regular;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/src/assets/fonts/Inter-SemiBold.ttf') format('ttf');
+  font-style: semi-bold;
+}
+
+@font-face {
+  font-family: 'FigTree';
+  src: url('/src/assets/fonts/Figtree-SemiBold.ttf') format('ttf');
+  font-style: semi-bold;
+}
+
+@font-face {
+  font-family: 'GeistMono';
+  src: url('/src//assets/fonts/GeistMono-Regular.woff2') format('woff2');
+  font-style: regular;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0px 100px;
+  }
+}
+
+html,
+body {
+  color: white;
+  font-family: var(--font-FigTree);
+  background-color: #010101;
+  background-image: radial-gradient(hsla(0, 0%, 85%, 0.2) 1px,
+      transparent 1px);
+  background-size: 25px 25px;
+  animation: moveBackground 5s linear infinite;
+
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
