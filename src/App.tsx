@@ -15,10 +15,7 @@ const App = () => {
     <>
       {isLoading ? (
         <Spinner text="ardpeiris.com" speed={0.2} />
-      ) 
-
-      
-      : (
+      ) : (
         <Navigation />
       )}
     </>
