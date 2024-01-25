@@ -1,5 +1,4 @@
-import { Flex, Screen, Text } from '../../components';
-import { ReactTyped } from 'react-typed';
+import { Flex, Screen, Text, TypeWriter } from '../../components';
 import styled from '@emotion/styled';
 
 const Greeting = styled(Flex)`
@@ -11,22 +10,18 @@ const Greeting = styled(Flex)`
   text-align: center;
   flex-direction: column;
   height: fit-content;
+  animation: fadeUp 2s ease-in-out forwards;
 
-  /* .landing-text {
-  
-
-@keyframes fade-in-bottom-up {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-animation: fade-in-bottom-up 1s ease-in-out both;
-} */
 `;
 
 export const Home = () => {
@@ -37,7 +32,8 @@ export const Home = () => {
           <Text type="text-xl">This is Russell’s Playground, feel free</Text>
           <Text type="text-xl"> to wander around!</Text>
         </Greeting>
-        <ReactTyped
+        <TypeWriter
+          className="type-writer"
           style={{
             marginTop: '16px',
             fontFamily: 'GeistMono',

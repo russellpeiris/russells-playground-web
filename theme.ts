@@ -4,4 +4,6 @@ export const colors = {
   primaryHover: '#1B1B1B',
   secondaryHover: '#DDDDDD',
   primaryBorder: 'rgba(255, 255, 255, 0.14)',
+  pink:'#f0f',
+  blue: '#0ff'
 };

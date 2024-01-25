@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* animated root background */
 @keyframes moveBackground {
   0% {
     background-position: 0 0;
@@ -42,6 +42,28 @@ body {
   background-size: 25px 25px;
   animation: moveBackground 5s linear infinite;
 }
+/* animation for sentence in Home */
+@keyframes type-writer-fade {
+  0% {
+    opacity: 0;
+    /* -webkit-transform: translateX(-30px); */
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    /* -webkit-transform: translateX(0px); */
+    transform: translateX(0px);
+  }
+}
+.type-writer {
+  font-size: 14px;
+  color: white;
+  animation: type-writer-fade 3s ease-in-out forwards;
+  /* color: transparent;  */
+  /* background: linear-gradient(to right, #f0f, #0ff);  */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+}
 
 #header {
   position: fixed;
@@ -52,24 +74,10 @@ body {
   z-index: 1000;
 }
 
+/* custom scrollbar */
 ::-webkit-scrollbar {
   width: 2px !important;
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to top, transparent, #ffffff, transparent);
-}
-
-.landing-text {
-  animation: fade-in-bottom-up 1s ease-in-out both;
-
-  @keyframes fade-in-bottom-up {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 }
