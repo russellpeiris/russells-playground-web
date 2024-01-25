@@ -1,8 +1,8 @@
-import styled from '@emotion/styled';
+import { Flex, PrimaryButton, SecondaryButton } from '..';
 import { Layout as AntLayout } from 'antd';
 import { Outlet } from 'react-router-dom';
 import { colors } from '../../../theme';
-import { Flex, PrimaryButton, SecondaryButton } from '..';
+import styled from '@emotion/styled';
 
 const { Header, Content } = AntLayout;
 

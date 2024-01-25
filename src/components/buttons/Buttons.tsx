@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
 import { Button, ButtonProps } from 'antd';
-import { FC } from 'react';
 import { colors } from '../../../theme';
+import styled from '@emotion/styled';
+import { FC } from 'react';
 
 type Props = ButtonProps & {
   buttontext: string;

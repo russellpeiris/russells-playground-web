@@ -3,5 +3,7 @@
   "trailingComma": "all",
   "jsxSingleQuote": false,
   "singleQuote": true,
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "importTypeOrder": ["all"],
+	"plugins": ["./node_modules/prettier-plugin-sort-imports/dist/index.js"]
 }

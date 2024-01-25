@@ -1,5 +1,3 @@
-import React, { CSSProperties } from 'react';
-import styled from '@emotion/styled';
 import {
   ColorProps,
   SpaceProps,
@@ -8,6 +6,8 @@ import {
   space,
   typography,
 } from 'styled-system';
+import React, { CSSProperties } from 'react';
+import styled from '@emotion/styled';
 
 export type FontTypes =
   | 'text-xl'

@@ -1,5 +1,3 @@
-import styled from "@emotion/styled";
-import { HTMLAttributes } from "react";
 import {
   BackgroundColorProps,
   BackgroundProps,
@@ -23,7 +21,9 @@ import {
   space,
   typography,
   width,
-} from "styled-system";
+} from 'styled-system';
+import { HTMLAttributes } from 'react';
+import styled from '@emotion/styled';
 
 export interface FlexBoxProps
   extends FlexProps,
@@ -53,5 +53,5 @@ export const Flex = styled.div<FlexBoxProps>`
   ${typography}
 `;
 Flex.defaultProps = {
-  display: "flex",
+  display: 'flex',
 };
