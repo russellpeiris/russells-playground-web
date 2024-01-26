@@ -1,6 +1,6 @@
 import { Flex, Screen, Text, TypeWriter } from '../../components';
+import { Slider } from '../../assets';
 import styled from '@emotion/styled';
-
 const Greeting = styled(Flex)`
   background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.35) 100%);
   background-clip: text;
@@ -38,6 +38,7 @@ export const Home = () => {
             marginTop: '16px',
             fontFamily: 'GeistMono',
             fontSize: '14px',
+            textAlign: 'center',
           }}
           backSpeed={50}
           strings={[
@@ -45,6 +46,7 @@ export const Home = () => {
           ]}
           typeSpeed={40}
         />
+        <Slider />
       </Screen>
       <Screen>r</Screen>
     </>

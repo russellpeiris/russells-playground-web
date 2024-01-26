@@ -1,3 +1,2 @@
-import Shape from './images/shape.svg';
-
-export { Shape };
+import Slider from './icons/tech-icons.svg?react';
+export { Slider };
