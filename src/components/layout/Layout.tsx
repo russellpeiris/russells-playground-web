@@ -12,7 +12,7 @@ const FixedHeader = styled(Header)`
   width: 100%;
   background: transparent;
   backdrop-filter: blur(0.8px);
-  z-index: 1000;
+  z-index: 2;
   color: white;
   display: flex;
   justify-content: flex-end;

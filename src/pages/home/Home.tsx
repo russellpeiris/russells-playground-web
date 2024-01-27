@@ -1,6 +1,9 @@
 import { Flex, Screen, Text, TypeWriter } from '../../components';
-import { Slider } from '../../assets';
+import { TechIcons } from '../../components/tech-icon/TechIcon';
+import Marquee from 'react-fast-marquee';
+import { colors } from '../../../theme';
 import styled from '@emotion/styled';
+
 const Greeting = styled(Flex)`
   background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.35) 100%);
   background-clip: text;
@@ -24,6 +27,14 @@ const Greeting = styled(Flex)`
   }
 `;
 
+const StyledMarquee = styled(Marquee)`
+  margin-top: 16px;
+  width: 60%;
+  border: ${colors.primaryBorder} 1px solid;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+`;
+
 export const Home = () => {
   return (
     <>
@@ -44,9 +55,14 @@ export const Home = () => {
           strings={[
             'Where I explore Full Stack wonders with creativity and curiosity.',
           ]}
-          typeSpeed={40}
+          typeSpeed={50}
         />
-        <Slider />
+        {/* <div id="pacman">
+            <div className="olho"></div>
+          </div> */}
+        <StyledMarquee className="icons-marquee" speed={40}>
+          <TechIcons />
+        </StyledMarquee>
       </Screen>
       <Screen>r</Screen>
     </>
