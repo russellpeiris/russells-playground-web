@@ -1,18 +1,6 @@
-@font-face {
-  font-family: 'Inter';
-  src: url('/src/assets/fonts/Inter-Regular.ttf') format('ttf');
-  font-style: regular;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('/src/assets/fonts/Inter-SemiBold.ttf') format('ttf');
-  font-style: semi-bold;
-}
-@font-face {
-  font-family: 'FigTree';
-  src: url('/src/assets/fonts/Figtree-SemiBold.ttf') format('ttf');
-  font-style: semi-bold;
-}
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 @font-face {
   font-family: 'GeistMono';
   src: url('/src//assets/fonts/GeistMono-Regular.woff2') format('woff2');
@@ -59,10 +47,6 @@ body {
   font-size: 14px;
   color: white;
   animation: type-writer-fade 3s ease-in-out forwards;
-  /* color: transparent;  */
-  /* background: linear-gradient(to right, #f0f, #0ff);  */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
 }
 
 @keyframes marquee-fade {
@@ -101,31 +85,10 @@ body {
     transform: rotateZ(360deg);
   }
 }
-#react-icon, #react-query-icon {
+#react-icon,
+#react-query-icon {
   animation: rotate-icon 5s linear infinite;
   transform-origin: center;
-}
-
-#pacman {
-  margin-right: -30px;
-  width: 88px;
-  height: 88px;
-  box-sizing: border-box;
-  transform: rotate(60deg);
-  background: linear-gradient(to right, #ffd700 50%, transparent 0);
-  border-radius: 50%;
-  z-index: 2;
-}
-#pacman::before {
-  content: "";
-  margin-left: 44px;
-  background: #ffd700;
-  border-radius: 0 100% 100% 0/50%;
-  position: absolute;
-  width: 44px;
-  height: 88px;
-  animation: boca 1s linear infinite;
-  transform-origin: left;
 }
 @-moz-keyframes boca {
   50% {

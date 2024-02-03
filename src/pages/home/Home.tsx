@@ -5,7 +5,8 @@ import { colors } from '../../../theme';
 import styled from '@emotion/styled';
 
 const Greeting = styled(Flex)`
-  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.35) 100%);
+  /* background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.35) 100%); */
+  background: linear-gradient(to right, #f0f, #0ff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -28,11 +29,12 @@ const Greeting = styled(Flex)`
 `;
 
 const StyledMarquee = styled(Marquee)`
+  width: 50%;
   margin-top: 16px;
-  width: 60%;
-  border: ${colors.primaryBorder} 1px solid;
+  overflow: hidden;
+  /* border: ${colors.primaryBorder} 1px solid;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); */
 `;
 
 export const Home = () => {
@@ -57,9 +59,7 @@ export const Home = () => {
           ]}
           typeSpeed={50}
         />
-        {/* <div id="pacman">
-            <div className="olho"></div>
-          </div> */}
+
         <StyledMarquee className="icons-marquee" speed={40}>
           <TechIcons />
         </StyledMarquee>
