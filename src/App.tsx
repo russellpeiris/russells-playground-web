@@ -4,7 +4,7 @@ import { Spinner } from './components';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
-
+  f;
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
