@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home, ThreeJS } from './pages';
 import { Layout } from './components';
+import { Home } from './pages';
 
 export default function NavigationRoutes() {
   return (
@@ -8,7 +8,6 @@ export default function NavigationRoutes() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/three" element={<ThreeJS />} />
         </Route>
       </Routes>
     </BrowserRouter>

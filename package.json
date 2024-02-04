@@ -20,13 +20,10 @@
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@react-three/fiber": "^8.15.15",
     "antd": "^5.13.2",
     "axios": "^1.6.6",
-    "framer-motion": "^11.0.3",
-    "framer-motion-3d": "^11.0.3",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "geist": "^1.2.1",
-    "gsap": "^3.12.5",
     "husky": "^9.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -34,7 +31,6 @@
     "react-router-dom": "^6.21.3",
     "react-typed": "^2.0.12",
     "styled-system": "^5.1.5",
-    "three": "^0.160.1",
     "use-scramble": "^2.2.15"
   },
   "devDependencies": {
