@@ -22,7 +22,6 @@
     "@emotion/styled": "^11.11.0",
     "antd": "^5.13.2",
     "axios": "^1.6.6",
-    "eslint-plugin-unused-imports": "^3.0.0",
     "geist": "^1.2.1",
     "husky": "^9.0.5",
     "react": "^18.2.0",

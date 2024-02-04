@@ -13,14 +13,6 @@ module.exports = {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
-    ],
-      "@typescript-eslint/explicit-function-return-type": "off",
-      "@typescript-eslint/explicit-member-accessibility": "off",
-      "@typescript-eslint/member-ordering": "error",
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-unused-vars": "off",
-      "@typescript-eslint/prefer-interface": "off",
-      "no-console": "off",
-      "sort-keys": "warn",
+    ]
   },
 };

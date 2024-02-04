@@ -1,6 +1,6 @@
-import { Spinner, PrimaryButton } from './components';
 import Navigation from './NavigationRoutes';
 import { useEffect, useState } from 'react';
+import { Spinner } from './components';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
