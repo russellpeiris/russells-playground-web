@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 const { Content } = AntLayout;
 
 const StyledContent = styled(Content)`
-  margin-top: 78px;
+  margin-top: 64px;
 `;
 
 export const Layout = () => {

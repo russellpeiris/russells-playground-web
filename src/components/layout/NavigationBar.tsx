@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 const { Header } = AntLayout;
 
 const FixedHeader = styled(Header)`
-  height: 78px;
+  height: 64px;
   position: fixed;
   width: 100%;
   background: transparent;
