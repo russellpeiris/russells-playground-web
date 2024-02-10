@@ -1,5 +1,6 @@
-import { Flex, Screen, Text, TypeWriter } from '../../components';
+import { Flex, Screen, Tag, Text, TypeWriter } from '../../components';
 import { TechIcons } from '../../components/tech-icon/TechIcon';
+import { isMobile } from '../../utils/screen-size';
 import Marquee from 'react-fast-marquee';
 import { colors } from '../../../theme';
 import styled from '@emotion/styled';
@@ -35,22 +36,27 @@ const StyledMarquee = styled(Marquee)`
   /* border: ${colors.primaryBorder} 1px solid;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.1); */
+
+  /* &.rfm-overlay::before, &.rfm-overlay::after {
+    background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
+  } */
 `;
 
 export const Home = () => {
   return (
     <>
-      <Screen alignItems={'center'} pt={'78px'} flexDirection={'column'}>
+      <Screen alignItems={'center'} pt={'64px'} flexDirection={'column'}>
         <Greeting>
           <Text type="text-xl">This is Russell’s Playground, feel free</Text>
           <Text type="text-xl"> to wander around!</Text>
         </Greeting>
+
         <TypeWriter
           className="type-writer"
           style={{
             marginTop: '16px',
             fontFamily: 'GeistMono',
-            fontSize: '14px',
+            fontSize: isMobile() ? '0.775rem' : '0.875rem',
             textAlign: 'center',
           }}
           backSpeed={50}
@@ -60,11 +66,29 @@ export const Home = () => {
           typeSpeed={50}
         />
 
-        <StyledMarquee className="icons-marquee" speed={40}>
+        <StyledMarquee
+          className="icons-marquee marquee-1"
+          speed={30}
+          gradient
+          gradientColor="black"
+        >
           <TechIcons />
         </StyledMarquee>
+
+        <Flex>
+          <Tag title="SLIIT" />
+          <Tag title="BetaLaunch" />
+          <Tag title="MetJip" />
+        </Flex>
+        {/* 
+        <Grid  style={{gap: '16px'}}>
+          <Card desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+          <Card desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+          <Card desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
+
+          
+        </Grid> */}
       </Screen>
-      <Screen>r</Screen>
     </>
   );
 };

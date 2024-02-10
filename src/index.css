@@ -3,13 +3,19 @@
 
 @font-face {
   font-family: 'GeistMono';
-  src: url('/src//assets/fonts/GeistMono-Regular.woff2') format('woff2');
+  src: url('/src/assets/fonts/GeistMono-Regular.woff2') format('woff2');
+  font-style: regular;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('/src/assets/fonts/Figtree-Bold.ttf') format('ttf');
   font-style: regular;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 /* animated root background */
 @keyframes moveBackground {
@@ -60,14 +66,6 @@ body {
 .icons-marquee {
   animation: marquee-fade 3s ease-in-out forwards;
 }
-#header {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-}
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
@@ -109,4 +107,26 @@ body {
   50% {
     transform: rotate(70deg);
   }
+}
+@media only screen and (max-width: 768px) {
+  .grid-d {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid-d {
+    grid-template-columns: auto;
+  }
+}
+
+.rfm-overlay::before, .rfm-overlay::after{
+  background: linear-gradient(to right, var(--gradient-color), rgb(255 255 255 / 0%));
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+  pointer-events: none;
+  touch-action: none;
 }
