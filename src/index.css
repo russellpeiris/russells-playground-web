@@ -120,9 +120,14 @@ body {
   }
 }
 
-.rfm-overlay::before, .rfm-overlay::after{
-  background: linear-gradient(to right, var(--gradient-color), rgb(255 255 255 / 0%));
-  content: "";
+.rfm-overlay::before,
+.rfm-overlay::after {
+  background: linear-gradient(
+    to right,
+    var(--gradient-color),
+    rgb(255 255 255 / 0%)
+  );
+  content: '';
   height: 100%;
   position: absolute;
   width: var(--gradient-width);
